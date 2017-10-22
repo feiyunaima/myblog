@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+.bg{
+    background: url('/images/timg.jpg') no-repeat bottom left;
+}
+body{
+    background:url('/images/bcg.jpg') repeat-y;
+}
+main{
+    width: 1070px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+    height: 50px;
+}
+a{
+    text-decoration:none;
+}
+nav ul li{
+    float:left;
+    margin:10px 10px;
+}
+nav ul li a{
+    color:#FCFFFD;
+    font-weight:700;
+}
+a:hover{
+    color:#96D2D3;
+}
+.container{
+    height: 1070px;
+    padding:30px 20px;
+    margin-top:10px;
+    box-shadow: #354B48 5px 5px 25px 26px;
+    color:#ffffff;
+}
+h2 a{
+    color: #ffffff;
+}
+
+.silder{
+    width: 960px;
+    height: 250px;
+    overflow:hidden;
+    border:4px solid #010101;
+}
+.silder ul{
+    width:2240px;
+    height:250px;
+    list-style: none;
+}
+.silder ul li{
+    width:320px;
+    height:250px;
+    float:left;
+    overflow:hidden;
+}
+
+article{
+    margin-top:30px;
+}
+
+article ul li{
+    width:960px;
+    height:130px;
+    background-color:rgba(65,70,74,0.4);
+    margin-top:20px;
+    padding:8px 5px;
+}
+article ul li h2{
+    padding-bottom:5px;
+    padding-left:10px;
+    border-bottom:1px solid #ffffff;
+    font-size:18px;
+    width:450px;
+}
+article>ul>li>span{
+    float:right;
+    width:70px;
+    height:25px;
+    background-color: rgba(69, 255, 197, 0.4);
+    font-size:10px;
+    line-height:25px;
+    text-align:center;
+}
+
+
+
+
+
