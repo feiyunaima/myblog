@@ -13,9 +13,13 @@ public class PageController {
 		return "miku";
 	}
 	
-	@RequestMapping("/{page}")
-	public String goPage(@PathVariable("page") String page) {
-		System.out.println("123");
-		return page;
+	@RequestMapping("/index")
+	public String miku() {
+		return "miku";
 	}
+	@RequestMapping("/myblog")
+	public String myblog() {
+		return "myblog";
+	}
+	
 }
