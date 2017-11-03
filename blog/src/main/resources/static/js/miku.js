@@ -4,12 +4,9 @@ $(function(){
 	var mikuSi = $('#mikusilder')[0];
 	var mikul = $('#mikusilder>ul>li')[0];
 	function Marquee(){
-		//console.log(mikuSi.scrollLeft);
-		console.log(miku.offsetWidth);
 		if(mikuSi.scrollLeft>=mikul.offsetWidth*4){
 			mikuSi.scrollLeft = 0;
 		}else{
-			//console.log(mikuSi.scrollLeft)
 			mikuSi.scrollLeft++;
 		}
 	}

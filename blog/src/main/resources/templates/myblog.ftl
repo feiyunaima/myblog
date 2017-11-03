@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/css/miku.css">
-    <link rel="stylesheet" href="/css/myblog.css">
-    <script src="/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
-    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
-    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
-    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/js/myblog.js"></script>
-    <script>
-        window.UEDITOR_HOME_URL = "/utf8-jsp"
-    </script>
+    <link rel="stylesheet" href="css/miku.css">
+    <link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/searchbar.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <div class="bg">
     <main>
         <header>
-            <img src="/images/logo.png" alt="">
+            <img src="images/logo.png" alt="">
         </header>
         <nav>
             <ul>
                 <li><a href="index">首页</a></li>
+                <li><a href="writeblog">写博</a></li>
                 <li><a href="myblog">我的博客</a></li>
                 <li><a href="tools">工具下载</a></li>
                 <li><a href="learn">学习收藏</a></li>
@@ -33,27 +26,88 @@
             </ul>
         </nav>
         <div class="container">
+            <div class="search bar">
+                <a href="">java</a>
+                <a href="">linux</a>
+                <a href="">oracle</a>
+                <a href="">delphi</a>
+                <form>
+                    <input type="text" placeholder="请输入您要搜索的内容...">
+                    <button type="submit"></button>
+                </form>
+            </div>
             <article>
-                <div>
-                    <h1>完整demo</h1>
-                    <script id="editor" type="text/plain" style="width:1024px;height:500px;">
-                        这里写你初始化的内容
-
-                    </script>
-                </div>
-                <div id="qiang"></div>
-                <footer>
-
-                    <a id="save" href="aaa">保存</a>
-
-                </footer>
-
+                <ul>
+                    <li>
+                        <h2><a href="">在DBGRIDEH中加入“合计”行</a></h2>
+                        <p>1、将dBGridEh.FooterRowCount := 1
+                            2、将DBGridEh.SumList.Active := True;
+                            3、将Columns[要求和的字段].Footer.ValueType := vtSum;
+                            就行了
+                            在FormCloseQuery事件中，将SumList.Active := False,
+                            因为在数据集中的数据多了以后，FormClose会让DBGridEh释放所有EhLib资源，
+                            会使得退出很慢，所以将SumList.Active := False不会引起退出很慢(慢点也可以啊。)
+                        </p>
+                        <span><a href="">阅读全文></a></span>
+                    </li>
+                    <li>
+                        <h2><a href="">在DBGRIDEH中加入“合计”行</a></h2>
+                        <p>1、将dBGridEh.FooterRowCount := 1
+                            2、将DBGridEh.SumList.Active := True;
+                            3、将Columns[要求和的字段].Footer.ValueType := vtSum;
+                            就行了
+                            在FormCloseQuery事件中，将SumList.Active := False,
+                            因为在数据集中的数据多了以后，FormClose会让DBGridEh释放所有EhLib资源，
+                            会使得退出很慢，所以将SumList.Active := False不会引起退出很慢(慢点也可以啊。)
+                        </p>
+                        <span><a href="">阅读全文></a></span>
+                    </li>
+                    <li>
+                        <h2><a href="">在DBGRIDEH中加入“合计”行</a></h2>
+                        <p>1、将dBGridEh.FooterRowCount := 1
+                            2、将DBGridEh.SumList.Active := True;
+                            3、将Columns[要求和的字段].Footer.ValueType := vtSum;
+                            就行了
+                            在FormCloseQuery事件中，将SumList.Active := False,
+                            因为在数据集中的数据多了以后，FormClose会让DBGridEh释放所有EhLib资源，
+                            会使得退出很慢，所以将SumList.Active := False不会引起退出很慢(慢点也可以啊。)
+                        </p>
+                        <span><a href="">阅读全文></a></span>
+                    </li>
+                    <li>
+                        <h2><a href="">在DBGRIDEH中加入“合计”行</a></h2>
+                        <p>1、将dBGridEh.FooterRowCount := 1
+                            2、将DBGridEh.SumList.Active := True;
+                            3、将Columns[要求和的字段].Footer.ValueType := vtSum;
+                            就行了
+                            在FormCloseQuery事件中，将SumList.Active := False,
+                            因为在数据集中的数据多了以后，FormClose会让DBGridEh释放所有EhLib资源，
+                            会使得退出很慢，所以将SumList.Active := False不会引起退出很慢(慢点也可以啊。)
+                        </p>
+                        <span><a href="">阅读全文></a></span>
+                    </li>
+                    <li>
+                        <h2><a href="">在DBGRIDEH中加入“合计”行</a></h2>
+                        <p>1、将dBGridEh.FooterRowCount := 1
+                            2、将DBGridEh.SumList.Active := True;
+                            3、将Columns[要求和的字段].Footer.ValueType := vtSum;
+                            就行了
+                            在FormCloseQuery事件中，将SumList.Active := False,
+                            因为在数据集中的数据多了以后，FormClose会让DBGridEh释放所有EhLib资源，
+                            会使得退出很慢，所以将SumList.Active := False不会引起退出很慢(慢点也可以啊。)
+                        </p>
+                        <span><a href="">阅读全文></a></span>
+                    </li>
+                </ul>
             </article>
+
+
         </div>
+
+
     </main>
 
 
 </div>
-
 </body>
 </html>

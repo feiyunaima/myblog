@@ -10,16 +10,27 @@ public class PageController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "miku";
+		return "index";
 	}
-	
 	@RequestMapping("/index")
+	public String index2() {
+		return "index";
+	}
+	@RequestMapping("/miku")
 	public String miku() {
 		return "miku";
-	}
+	}	
 	@RequestMapping("/myblog")
 	public String myblog() {
 		return "myblog";
+	}
+	@RequestMapping("/writeblog")
+	public String writeblog() {
+		return "writeblog";
+	}
+	@RequestMapping("/tools")
+	public String tools() {
+		return "tools";
 	}
 	
 }

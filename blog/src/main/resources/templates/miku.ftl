@@ -16,6 +16,7 @@
         <nav>
             <ul>
                 <li><a href="index">首页</a></li>
+                <li><a href="writeblog">写博</a></li>
                 <li><a href="myblog">我的博客</a></li>
                 <li><a href="tools">工具下载</a></li>
                 <li><a href="learn">学习收藏</a></li>

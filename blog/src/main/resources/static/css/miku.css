@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 .bg{
     background: url('/images/timg.jpg') no-repeat bottom left;
@@ -86,6 +87,7 @@ article>ul>li>span{
     line-height:25px;
     text-align:center;
 }
+
 
 
 
