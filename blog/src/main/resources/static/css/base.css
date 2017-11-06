@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.bg{
+    background: url('/images/timg.jpg') no-repeat bottom left;
+}
+body{
+    background:url('/images/bcg.jpg') repeat-y;
+}
+main{
+    width: 1070px;
+    margin: 0 auto;
+}
+nav ul{
+    list-style: none;
+    height: 50px;
+}
+a{
+    text-decoration:none;
+}
+nav ul li{
+    float:left;
+    margin:10px 10px;
+}
+nav ul li a{
+    color:#FCFFFD;
+    font-weight:700;
+}
+a:hover{
+    color:#96D2D3;
+}
+.container{
+    height: 1070px;
+    padding:30px 20px;
+    margin-top:10px;
+    box-shadow: #354B48 5px 5px 25px 26px;
+    color:#ffffff;
+}
+h2 a{
+    color: #ffffff;
+}
+
+article{
+    margin-top:30px;
+}
+
+
+
+
+
+
+
+
+
+

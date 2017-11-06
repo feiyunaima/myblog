@@ -32,5 +32,9 @@ public class PageController {
 	public String tools() {
 		return "tools";
 	}
+	@RequestMapping("/heart")
+	public String heart() {
+		return "heart";
+	}
 	
 }
