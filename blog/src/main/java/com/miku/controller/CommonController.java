@@ -36,7 +36,7 @@ public class CommonController {
             writer.write(exec);  
             writer.flush();  
             writer.close();  
-        } catch (IOException | JSONException e) {  
+        } catch (IOException e) {  
             e.printStackTrace();  
         }  
     }
