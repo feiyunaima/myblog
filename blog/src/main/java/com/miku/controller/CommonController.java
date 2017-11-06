@@ -38,7 +38,9 @@ public class CommonController {
             writer.close();  
         } catch (IOException e) {  
             e.printStackTrace();  
-        }  
+        } catch (JSONException e) {
+			e.printStackTrace();
+		}  
     }
       
 }  
