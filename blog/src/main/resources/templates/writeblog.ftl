@@ -38,8 +38,8 @@
             <article>
                 <div>
                     <div class="title">
-                        <span >标题</span><input  type="text" placeholder="坚持点滴的积累...">
-                        <a id="save" href="aaa">保存提交</a>
+                        <span >标题</span><input  id="title" type="text" placeholder="坚持点滴的积累...">
+                        <a id="save">保存提交</a>
                     </div>
 
                     <script id="editor" type="text/plain" style="width:1024px;height:500px;">
