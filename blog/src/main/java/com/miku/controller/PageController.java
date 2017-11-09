@@ -36,5 +36,9 @@ public class PageController {
 	public String heart() {
 		return "heart";
 	}
+	@RequestMapping("/leavewords")
+	public String leavewords() {
+		return "leavewords";
+	}
 	
 }

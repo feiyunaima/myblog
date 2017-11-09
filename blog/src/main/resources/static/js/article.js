@@ -8,7 +8,7 @@ $(function(){
         var articlebody = ue.getContent();
         var title = $('#title').val();
         $.ajax({
-        	url:"writeblog/save",
+        	url:"article/save",
         	type:"post",
         	data:{
         		title:title,

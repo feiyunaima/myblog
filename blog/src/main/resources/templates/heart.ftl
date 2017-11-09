@@ -20,7 +20,6 @@
                 <li><a href="writeblog">写博</a></li>
                 <li><a href="myblog">我的博客</a></li>
                 <li><a href="heart">心情历程</a></li>
-                <li><a href="learn">学习收藏</a></li> <!--  github上面各种demo的下载-->
                 <li><a href="miku">初音ミク</a></li>
                 <li><a href="leavewords">评论留言</a></li>
             </ul>

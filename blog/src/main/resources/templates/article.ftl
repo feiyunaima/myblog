@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/writeblog.css">
+    <link rel="stylesheet" href="/css/article.css">
     <script src="/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
     <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/js/writeblog.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/article.js"></script>
     <script type="text/javascript" charset="utf-8" src="/js/scroll.js"></script>
     <script>
         window.UEDITOR_HOME_URL = "/utf8-jsp"
@@ -27,7 +27,6 @@
                 <li><a href="writeblog">写博</a></li>
                 <li><a href="myblog">我的博客</a></li>
                 <li><a href="heart">心情历程</a></li>
-                <li><a href="learn">学习收藏</a></li>
                 <li><a href="miku">初音ミク</a></li>
                 <li><a href="leavewords">评论留言</a></li>
             </ul>

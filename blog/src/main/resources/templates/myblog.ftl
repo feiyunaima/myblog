@@ -21,7 +21,6 @@
                 <li><a href="writeblog">写博</a></li>
                 <li><a href="myblog">我的博客</a></li>
                 <li><a href="heart">心情历程</a></li>
-                <li><a href="learn">学习收藏</a></li>
                 <li><a href="miku">初音ミク</a></li>
                 <li><a href="leavewords">评论留言</a></li>
             </ul>
@@ -41,9 +40,11 @@
                 <ul>
                 	<#list articlelist as article>
 					    <li>
+					    <div class="inner">
 	                        <h2><a href="article/?id=${article.id }">${article.title! }</a></h2>
  							<p>00 ${article.articlebody! } </p>
  							<span><a href="article/?id=${article.id }">阅读全文></a></span>
+ 						 <div>	
                     	</li>	
 					</#list>                  
                 </ul>
