@@ -1,0 +1,54 @@
+.say{
+    width: 960px;
+    height: 210px;
+    padding:20px 10px;
+}
+.words>ul{
+    list-style: none;
+}
+.user_picture{
+    float:left;
+    width:90px;
+    height:90px;
+    overflow:hidden;
+    background-image: url(/images/miku03.jpg);
+    background-position: center center ;
+    border-radius:40px;
+}
+.words{
+    width:820px;
+    height:160px;
+    float:left;
+    background-color: rgba(0, 152, 50, 0.1);
+    box-shadow: 5px 5px 2px rgba(0, 152, 50, 0.3);
+}
+.words textarea{
+    width:700px;
+    height:135px;
+    margin:5px;
+    font-size:14px;
+    BACKGROUND-COLOR: transparent;
+    border:1px;
+    border-color:red;
+    margin:10px 5px;
+}
+#submit{
+    float:right;
+    width:80px;
+    height:50px;
+    border-radius:20px;
+    background-color: #1d686e;
+    margin:50px 3px 3px 3px;
+    text-align: center;
+    line-height: 50px;
+}
+.neirong{
+    float:left;
+}
+video{
+	float:left;
+}
+.qiang{
+    height:20px;
+    clear:both;
+}
