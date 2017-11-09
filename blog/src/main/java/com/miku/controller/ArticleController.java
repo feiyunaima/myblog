@@ -12,8 +12,8 @@ import com.miku.model.ArticleEntity;
 import com.miku.repository.ArticleRepository;
 
 @Controller
-@RequestMapping(value="writeblog")
-public class WriteblogController {
+@RequestMapping(value="article")
+public class ArticleController {
 	
 	@Autowired
 	ArticleRepository articleRepository;
@@ -31,6 +31,24 @@ public class WriteblogController {
 		articleRepository.save(article);
 		result.setSuccess(true);
 		result.setMsg("添加成功");
+		return result;
+	}
+	
+	@RequestMapping("update")
+	@ResponseBody
+	public Result update(String articlebody,String title,Long id) {
+		Result result = new Result();
+		ArticleEntity article = articleRepository.findOne(id);
+		if(!"".equals(title)) {
+			article.setTitle(title);
+		}
+		if(!"".equals(articlebody)) {
+			article.setMainbody(articlebody);
+		}
+		article.setUpdatetime(new Date());
+		articleRepository.save(article);
+		result.setSuccess(true);
+		result.setMsg("修改成功");
 		return result;
 	}
 }
