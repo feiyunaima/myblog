@@ -26,7 +26,7 @@ public class PageController {
 	}
 	@RequestMapping("/writeblog")
 	public String writeblog() {
-		return "writeblog";
+		return "forward:/article";
 	}
 	@RequestMapping("/tools")
 	public String tools() {

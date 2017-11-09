@@ -53,15 +53,6 @@ public class ArticleEntity {
 	public void setUser(UserEntity user) {
 		this.user = user;
 	}
-
-	public String getMainbody() {
-		return articlebody;
-	}
-
-	public void setMainbody(String mainbody) {
-		this.articlebody = mainbody;
-	}
-
 	public String getTitle() {
 		return title;
 	}
@@ -85,6 +76,12 @@ public class ArticleEntity {
 	public void setUpdatetime(Date updatetime) {
 		this.updatetime = updatetime;
 	}
-	
-	
+
+	public String getArticlebody() {
+		return articlebody;
+	}
+
+	public void setArticlebody(String articlebody) {
+		this.articlebody = articlebody;
+	}	
 }

@@ -41,9 +41,9 @@
                 <ul>
                 	<#list articlelist as article>
 					    <li>
-	                        <h2><a href='"article/?id="+${article.id }'>${article.title! }</a></h2>
- 							<p> ${article.articlebody } </p>
- 							<span><a href='"article/?id="+${article.id }'>阅读全文></a></span>
+	                        <h2><a href="article/?id=${article.id }">${article.title! }</a></h2>
+ 							<p>00 ${article.articlebody! } </p>
+ 							<span><a href="article/?id=${article.id }">阅读全文></a></span>
                     	</li>	
 					</#list>                  
                 </ul>

@@ -23,6 +23,9 @@ public class ArticleController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String article(Long id,ModelMap map) {
+		if(id==null) {
+			return "article";
+		}
 		ArticleEntity article = articleRepository.findOne(id);
 		map.put("article", article);
 		return "article";
@@ -50,7 +53,7 @@ public class ArticleController {
 		article.setCreatetime(new Date());
 		article.setUpdatetime(new Date());
 		article.setTitle(title);
-		article.setMainbody(articlebody);
+		article.setArticlebody(articlebody);
 //		article.setUser();
 		articleRepository.save(article);
 		result.setSuccess(true);
@@ -67,7 +70,7 @@ public class ArticleController {
 			article.setTitle(title);
 		}
 		if(!"".equals(articlebody)) {
-			article.setMainbody(articlebody);
+			article.setArticlebody(articlebody);
 		}
 		article.setUpdatetime(new Date());
 		articleRepository.save(article);
