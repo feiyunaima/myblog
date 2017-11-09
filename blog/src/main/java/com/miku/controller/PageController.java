@@ -21,8 +21,8 @@ public class PageController {
 		return "miku";
 	}	
 	@RequestMapping("/myblog")
-	public String myblog() {
-		return "myblog";
+	public String myblog() {		
+		return "forward:/article/listAll";
 	}
 	@RequestMapping("/writeblog")
 	public String writeblog() {

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .bg{
-    background: url('/images/timg.jpg') no-repeat bottom left;
+   /* background: url('/images/timg.jpg') no-repeat bottom left; */
 }
 body{
     background:url('/images/bcg.jpg') repeat-y;

@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/miku.css">
-    <script src="js/jquery-1.8.3.min.js"></script>
-    <script src="js/miku.js"></script>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/writeblog.css">
+    <script src="/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/writeblog.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/js/scroll.js"></script>
+    <script>
+        window.UEDITOR_HOME_URL = "/utf8-jsp"
+    </script>
 </head>
 <body>
 <div class="bg">
     <main>
         <header>
-            <img src="images/logo.png" alt="">
+            <img src="/images/logo.png" alt="">
         </header>
         <nav>
             <ul>
@@ -25,21 +33,19 @@
             </ul>
         </nav>
         <div class="container">
-
             <article>
-                <h1>文章标题</h1>
-                <div class="wenzhang">
-                    文章内容
+                <div>
+                    <div class="title">
+                        <span >标题</span><input  id="title" type="text" placeholder="坚持点滴的积累...">
+                        <a id="save">保存提交</a>
+                    </div>
+                    <script id="editor" type="text/plain" style="width:1024px;height:500px;">
+                    </script>
                 </div>
+                <div id="qiang"></div>
             </article>
-
-
         </div>
-
-
     </main>
-
-
 </div>
 </body>
 </html>

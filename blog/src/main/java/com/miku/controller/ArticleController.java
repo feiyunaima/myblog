@@ -1,10 +1,13 @@
 package com.miku.controller;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.miku.bean.Result;
@@ -17,6 +20,27 @@ public class ArticleController {
 	
 	@Autowired
 	ArticleRepository articleRepository;
+	
+	@RequestMapping(method=RequestMethod.GET)
+	public String article(Long id,ModelMap map) {
+		ArticleEntity article = articleRepository.findOne(id);
+		map.put("article", article);
+		return "article";
+	}
+	
+	@RequestMapping("listAll")
+	public String listAll(ModelMap map){
+		List<ArticleEntity> articlelist = (List<ArticleEntity>) articleRepository.findAll();
+		map.put("articlelist", articlelist);
+		return "myblog";
+	}
+	
+	@RequestMapping("list")
+	public String list(ModelMap map,String name){
+		List<ArticleEntity> articlelist = (List<ArticleEntity>) articleRepository.findByName(name);
+		map.put("articlelist", articlelist);
+		return "myblog";
+	}
 	
 	@RequestMapping("save")
 	@ResponseBody
