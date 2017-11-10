@@ -12,10 +12,6 @@ public class PageController {
 	public String index() {
 		return "index";
 	}
-	@RequestMapping("/index")
-	public String index2() {
-		return "index";
-	}
 	@RequestMapping("/miku")
 	public String miku() {
 		return "miku";
